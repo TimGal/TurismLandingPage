@@ -1,0 +1,70 @@
+/* Customize the label (the container) */
+.poll-container:first-child {
+	margin-top: 40px;
+}
+
+
+
+.poll-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+	font-family: DemiBold;
+	text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.poll-container input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.poll-container:hover input ~ .checkmark {
+  background-color: #ffffff;
+}
+
+/* When the radio button is checked, add a blue background */
+.poll-container input:checked ~ .checkmark {
+  background-color: #eee;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.poll-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.poll-container .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 14px;
+  height:14px;
+  border-radius: 50%;
+  background: #ec1e31;
+}

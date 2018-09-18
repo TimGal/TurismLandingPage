@@ -1,0 +1,48 @@
+.file_upload input[type=file] {
+	position: absolute;
+	top: 0;
+	visibility: hidden
+}
+
+.file_upload {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.1s linear
+}
+
+.file_upload.focus {
+	box-shadow: 0 0 5px rgba(0, 30, 255, 0.4)
+}
+
+.file_upload > button {
+	background: #16a9b6;
+	transition: background 0.2s;
+	border: 1px solid #16a9b6;
+	border-radius: 3px;
+	color: #fefefe;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 117px;
+	height: 39px;
+	font-family: DemiBold;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.file_upload:hover > button {
+	background: #128d98;
+}
+
+.file_upload:active > button {
+	background: #128d98;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3) inset
+}
+
+.file-contain {
+	font-family: DemiBold;
+	font-size: 16px;
+	color: #dfdfe3;
+	text-transform: uppercase;
+}
