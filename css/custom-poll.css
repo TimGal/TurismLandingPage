@@ -28,6 +28,7 @@
 
 /* Create a custom radio button */
 .checkmark {
+	    border: 1px solid darkgray;
   position: absolute;
   top: 0;
   left: 0;
@@ -61,8 +62,8 @@
 
 /* Style the indicator (dot/circle) */
 .poll-container .checkmark:after {
-  top: 5px;
-  left: 5px;
+  top: 4px;
+  left: 4px;
   width: 14px;
   height:14px;
   border-radius: 50%;

@@ -50,7 +50,6 @@ body {
 	font-size: 34px;
 	text-transform: uppercase;
 	color: white;
-	padding-left: 13px;
 }
 
 .head-desc {
@@ -396,11 +395,11 @@ section {
 	font-size: 16px;
 	color: #fce26a;
 	text-transform: uppercase;
+	margin-left: 24px;
 }
 
 .head-buttons {
-	margin-top: 13px;
-	margin-left: 13px;
+	    margin-top: 42px;
 }
 
 #partners {
@@ -482,6 +481,7 @@ section {
 	font-size: 16px;
 	color: #2a2d36;
 	margin-left: 27px;
+	text-transform: uppercase;
 }
 
 .form-control2 {
@@ -532,4 +532,13 @@ section {
 
 .food-text-wrapper {
 	height: 100px;
+}
+
+.upload {
+	float: right;
+	    margin-right: 6%;
+}
+
+.choices {
+	margin-left: 12%;
 }

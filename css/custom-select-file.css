@@ -5,8 +5,6 @@
 }
 
 .file_upload {
-	border: 1px solid #ccc;
-	border-radius: 3px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 	transition: box-shadow 0.1s linear
 }
@@ -29,6 +27,7 @@
 	font-family: DemiBold;
 	font-size: 16px;
 	text-transform: uppercase;
+	float: right;
 }
 
 .file_upload:hover > button {
@@ -45,4 +44,6 @@
 	font-size: 16px;
 	color: #dfdfe3;
 	text-transform: uppercase;
+	margin-left: 30%;
+	line-height: 39px;
 }
