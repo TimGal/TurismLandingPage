@@ -6,3 +6,4 @@ $(() => {
             $('input[type="file"]',e.target.parentElement).click()
         })
 })
+
