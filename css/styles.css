@@ -285,6 +285,7 @@ body {
 .abs {
 	position: relative;
 	width: 120%;
+	margin-top: 65px;
 }
 
 #poll {
@@ -527,4 +528,8 @@ section {
 
 #en.active{
 	color: #fce26a;
+}
+
+.food-text-wrapper {
+	height: 100px;
 }
