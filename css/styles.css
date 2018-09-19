@@ -283,7 +283,8 @@ body {
 }
 
 .abs {
-	position: relative
+	position: relative;
+	width: 120%;
 }
 
 #poll {
@@ -518,4 +519,12 @@ section {
 .map-navigation.active {
 	color: #fce26a !important;
 	text-decoration: none !important;
+}
+
+#ru.active{
+	color: #fce26a;
+}
+
+#en.active{
+	color: #fce26a;
 }
