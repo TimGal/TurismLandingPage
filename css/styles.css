@@ -95,6 +95,8 @@ body {
 	font-family: DemiBold;
 	font-size: 16px;
 	color: #16a9b6;
+	line-height: 58px;
+	padding: 0;
 }
 
 .head-news {
@@ -106,7 +108,7 @@ body {
 	color: #16a9b6;
 	font-size: 18px;
 	margin-top: 83px;
-  margin-left: 2px;
+	margin-left: 2px;
 }
 
 .new-head {
@@ -144,9 +146,7 @@ body {
 	height: 100%;
 }
 
-.new-block:first-child {
-
-}
+.new-block:first-child {}
 
 .new-block {
 	position: relative;
@@ -330,9 +330,7 @@ body {
 	padding: 0 !important;
 }
 
-#map {
-
-}
+#map {}
 
 section {
 	min-height: 800px;
@@ -352,8 +350,8 @@ section {
 
 .map-nav {
 	height: 200px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	width: 100%;
 	position: relative;
 	float: left;
@@ -362,8 +360,8 @@ section {
 }
 
 .map-photo {
-	width: 36.5%;
-  height: 400px;
+	width: 40%;
+	height: 400px;
 	position: absolute;
 	float: right;
 	background-image: url(../vendor/new.png);
@@ -399,7 +397,7 @@ section {
 }
 
 .head-buttons {
-	    margin-top: 42px;
+	margin-top: 42px;
 }
 
 #partners {
@@ -417,7 +415,7 @@ section {
 
 #mod-dialog {
 	width: 792px !important;
-  max-width: 792px !important;
+	max-width: 792px !important;
 }
 
 .modal-header {
@@ -439,17 +437,17 @@ section {
 	border-radius: 13px;
 	position: relative;
 	float: right;
-  margin-top: 84px;
+	margin-top: 84px;
 	margin-right: 43px;
 	border: 0;
 }
 
 .close-icon {
 	font-family: Light;
-  font-size: 25px;
-  color: white;
-  line-height: 18px;
-  text-align: center;
+	font-size: 25px;
+	color: white;
+	line-height: 18px;
+	text-align: center;
 }
 
 .form-group > label {
@@ -470,8 +468,8 @@ section {
 	font-family: DemiBold;
 	color: #e2e2e6;
 	line-height: 1.5;
-  padding-top: calc(.375rem + 1px);
-  padding-bottom: calc(.375rem + 1px);
+	padding-top: calc(.375rem + 1px);
+	padding-bottom: calc(.375rem + 1px);
 	margin-left: 43px;
 	float: left;
 }
@@ -486,13 +484,13 @@ section {
 
 .form-control2 {
 	height: 36px;
-		margin-right: 46px;
-	  font-family: Medium;
-    font-size: 18px;
-    text-transform: uppercase;
-		float: right;
-    position: relative;
-    width: 480px;
+	margin-right: 46px;
+	font-family: Medium;
+	font-size: 18px;
+	text-transform: uppercase;
+	float: right;
+	position: relative;
+	width: 480px;
 }
 
 .form-control2:focus {
@@ -512,8 +510,8 @@ section {
 	text-decoration: underline !important;
 	text-transform: uppercase;
 	height: 50px;
-  text-align: left;
-  line-height: 70px;
+	text-align: left;
+	line-height: 70px;
 	cursor: pointer;
 }
 
@@ -522,11 +520,11 @@ section {
 	text-decoration: none !important;
 }
 
-#ru.active{
+#ru.active {
 	color: #fce26a;
 }
 
-#en.active{
+#en.active {
 	color: #fce26a;
 }
 
@@ -536,7 +534,7 @@ section {
 
 .upload {
 	float: right;
-	    margin-right: 6%;
+	margin-right: 6%;
 }
 
 .choices {
