@@ -1,5 +1,5 @@
 /* Customize the label (the container) */
-.poll-container:first-child {
+.col-lg-11 > .poll-container:first-child {
 	margin-top: 86px;
 }
 
