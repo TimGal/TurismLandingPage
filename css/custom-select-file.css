@@ -5,8 +5,7 @@
 }
 
 .file_upload {
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-	transition: box-shadow 0.1s linear
+
 }
 
 .file_upload.focus {
@@ -44,10 +43,18 @@
 	font-size: 16px;
 	color: #dfdfe3;
 	text-transform: uppercase;
-	margin-left: 26%;
+	margin-left: 13%;
 	line-height: 39px;
 }
 
 .file-contain > li {
 	list-style-type: none;
+}
+
+.up-load {
+	display: flex !important;
+}
+
+.filenames {
+	width: 66.5%;
 }

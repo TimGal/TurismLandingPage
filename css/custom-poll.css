@@ -1,6 +1,6 @@
 /* Customize the label (the container) */
 .poll-container:first-child {
-	margin-top: 84px;
+	margin-top: 86px;
 }
 
 .poll-container {
@@ -32,18 +32,18 @@
 	left: 0;
 	height: 24px;
 	width: 24px;
-	background-color: #eee;
+	background-color: #ffffff;
 	border-radius: 50%;
 }
 
 /* On mouse-over, add a grey background color */
 .poll-container:hover input ~ .checkmark {
-	background-color: #ffffff;
+	background-color: #efefef;
 }
 
 /* When the radio button is checked, add a blue background */
 .poll-container input:checked ~ .checkmark {
-	background-color: #eee;
+	background-color: #fff;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -68,6 +68,14 @@
 	background: #ec1e31;
 }
 
+progress[value]::-webkit-progress-bar {
+    background-color: #fff !important;
+}
+
 .progress {
+	background-color: transparent;
+}
+
+.progress-bar {
 	background-color: transparent;
 }
