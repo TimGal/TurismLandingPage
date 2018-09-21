@@ -79,3 +79,29 @@ progress[value]::-webkit-progress-bar {
 .progress-bar {
 	background-color: transparent;
 }
+
+.btn-send {
+	width: 282px;
+	height: 58px;
+/*	border: 1px solid #fce26a;*/
+	border-radius: 29px;
+	background-color: #16a9b6;
+	font-family: DemiBold;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-left: auto;
+	position: relative;
+	float: right;
+	margin-bottom: 90px;
+}
+
+
+
+.progress {
+	display: none;
+}
+
+.food-wrapper {
+	margin-top: 90px;
+}

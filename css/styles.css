@@ -540,3 +540,119 @@ section {
 .choices {
 	margin-left: 12%;
 }
+/* Костыльная часть */
+.owl-prev {
+	background-color: #16a9b6 !important;
+	border-top-left-radius: 29px !important;
+	border-bottom-left-radius: 29px !important;
+	width: 78px !important;
+	height: 58px !important;
+	font-size: 14px !important;
+}
+
+.owl-next {
+	background-color: #16a9b6 !important;
+	border-top-right-radius: 29px !important;
+	border-bottom-right-radius: 29px !important;
+	width: 78px !important;
+	height: 58px !important;
+	font-size: 14px !important;
+}
+
+.food-descr {
+	position: absolute;
+    height: 105px;
+    margin-left: 408px;
+    margin-top: 90px;
+    top: 0;
+    width: 3px;
+    border-left: 2px solid #16a9b6;
+    font-family: DemiBold;
+    line-height: 105px;
+    color: #16a9b6;
+    text-transform: uppercase;
+    padding-left: 22px;
+    font-size: 18px;
+}
+
+.food-descr-2 {
+	position: absolute;
+    height: 105px;
+    margin-left: 408px;
+    margin-top: 210px;
+    top: 0;
+    width: 3px;
+    border-left: 2px solid #16a9b6;
+    font-family: DemiBold;
+    line-height: 105px;
+    color: #16a9b6;
+    text-transform: uppercase;
+    padding-left: 22px;
+    font-size: 18px;
+}
+
+.food-descr-3 {
+	position: absolute;
+    height: 105px;
+    margin-left: 408px;
+    top: 0;
+    width: 3px;
+    border-left: 2px solid #16a9b6;
+    font-family: DemiBold;
+    line-height: 105px;
+    color: #16a9b6;
+    text-transform: uppercase;
+    padding-left: 22px;
+    font-size: 18px;
+	margin-top: 330px;
+    width: 180px;
+}
+
+.food-descr-4 {
+	position: absolute;
+    margin-left: 408px;
+    top: 0;
+    width: 3px;
+    border-left: 2px solid #16a9b6;
+    font-family: DemiBold;
+    color: #16a9b6;
+    text-transform: uppercase;
+    padding-left: 22px;
+    font-size: 18px;
+    width: 180px;
+	margin-top: 442px;
+    height: 180px;
+    line-height: 180px;
+}
+
+.food-descr-5 {
+	position: absolute;
+    height: 105px;
+    margin-left: 408px;
+    margin-top: 636px;
+    top: 0;
+    width: 3px;
+    border-left: 2px solid #16a9b6;
+    font-family: DemiBold;
+    line-height: 105px;
+    color: #16a9b6;
+    text-transform: uppercase;
+    padding-left: 22px;
+    font-size: 18px;
+}
+
+.food-descr-6 {
+	position: absolute;
+    height: 105px;
+    margin-left: 408px;
+    margin-top: 753px;
+    top: 0;
+    width: 3px;
+    border-left: 2px solid #16a9b6;
+    font-family: DemiBold;
+    line-height: 105px;
+    color: #16a9b6;
+    text-transform: uppercase;
+    padding-left: 22px;
+    font-size: 18px;
+}

@@ -8,6 +8,7 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -265,6 +266,7 @@
 	<!--Polls-->
 	<section id="poll">
 		<div class="container">
+			<form method="post" name="polls">
 			<!--Museums-->
 			<div class="row">
 				<div class="col-lg-1">
@@ -275,16 +277,16 @@
 					</div>
 				</div>
 				<div class="col-lg-11">
+
 					<label class="poll-container">Национальный музей Республики Татарстан (Гостиный двор)
-						<input type="radio" name="museums">
+						<input type="radio" name="museums" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
 						</div>
 					</label>
-
 					<label class="poll-container">Музей социалистического быта
-						<input type="radio" name="museums">
+						<input type="radio" name="museums" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -292,7 +294,7 @@
 					</label>
 
 					<label class="poll-container">Музей «Городская Панорама»
-						<input type="radio" name="museums">
+						<input type="radio" name="museums" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -300,7 +302,7 @@
 					</label>
 
 					<label class="poll-container">Государственный музей изобразительных искусств Республики Татарстан
-						<input type="radio" name="museums">
+						<input type="radio" name="museums" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -308,7 +310,7 @@
 					</label>
 
 					<label class="poll-container">Музей Старо-Татарской слободы
-						<input type="radio" name="museums">
+						<input type="radio" name="museums" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -316,7 +318,7 @@
 					</label>
 
 					<label class="poll-container">Музей чак-чака
-						<input type="radio" name="museums">
+						<input type="radio" name="museums" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -336,7 +338,7 @@
 				</div>
 				<div class="col-lg-11">
 					<label class="poll-container">Казанский Кремль
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -344,7 +346,7 @@
 					</label>
 
 					<label class="poll-container">Национальный комплекс «Туган Авылым»
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -352,7 +354,7 @@
 					</label>
 
 					<label class="poll-container">Старо-татарская Слобода
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -360,7 +362,7 @@
 					</label>
 
 					<label class="poll-container">Храм всех религий
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -368,7 +370,7 @@
 					</label>
 
 					<label class="poll-container">Казанский (Приволжский) федеральный университет
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -376,7 +378,7 @@
 					</label>
 
 					<label class="poll-container">Национальная библиотека (Дом Ушковой)
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -384,7 +386,7 @@
 					</label>
 
 					<label class="poll-container">Казанский Богородицкий монастырь (Икона Божией Матери Казанской)
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -392,12 +394,12 @@
 					</label>
 
 					<label class="poll-container">Парк Аттракционов «Кырлай»
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 					</label>
 
 					<label class="poll-container">Аквапарк «Ривьера»
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -405,7 +407,7 @@
 					</label>
 
 					<label class="poll-container">Колесо обозрения «Вокруг Света»
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -413,7 +415,7 @@
 					</label>
 
 					<label class="poll-container">Центр семьи «Казан»
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -421,7 +423,7 @@
 					</label>
 
 					<label class="poll-container">Стадион Казань-арена
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -429,7 +431,7 @@
 					</label>
 
 					<label class="poll-container">Смотровая площадка на колокольне Богоявленского собора
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -437,7 +439,7 @@
 					</label>
 
 					<label class="poll-container">Вертолетная площадка "Гранд Отель Казань"
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -445,7 +447,7 @@
 					</label>
 
 					<label class="poll-container">Улица Баумана
-						<input type="radio" name="sights">
+						<input type="radio" name="sights" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -465,7 +467,7 @@
 				</div>
 				<div class="col-lg-11">
 					<label class="poll-container">Татарский академический гос. театр оперы и балета им. М. Джалиля
-						<input type="radio" name="theatres">
+						<input type="radio" name="theatres" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -473,7 +475,7 @@
 					</label>
 
 					<label class="poll-container">Казанский большой драматический театр им. В. И. Качалова
-						<input type="radio" name="theatres">
+						<input type="radio" name="theatres" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -481,7 +483,7 @@
 					</label>
 
 					<label class="poll-container">Татарский государственный театр кукол «Экият»
-						<input type="radio" name="theatres">
+						<input type="radio" name="theatres" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -489,7 +491,7 @@
 					</label>
 
 					<label class="poll-container">Молодежный театр на Булаке
-						<input type="radio" name="theatres">
+						<input type="radio" name="theatres" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -497,7 +499,7 @@
 					</label>
 
 					<label class="poll-container">Татарский государственный академический театр им. Г. Камала
-						<input type="radio" name="theatres">
+						<input type="radio" name="theatres" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -505,7 +507,7 @@
 					</label>
 
 					<label class="poll-container">Татарский государственный театр драмы и комедии им. К. Тинчурина
-						<input type="radio" name="theatres">
+						<input type="radio" name="theatres" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -525,7 +527,7 @@
 				</div>
 				<div class="col-lg-11">
 					<label class="poll-container">ЦПКиО им.Горького
-						<input type="radio" name="parks">
+						<input type="radio" name="parks" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -533,7 +535,7 @@
 					</label>
 
 					<label class="poll-container">Парк «Черное озеро»
-						<input type="radio" name="parks">
+						<input type="radio" name="parks" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -541,7 +543,7 @@
 					</label>
 
 					<label class="poll-container">Горкинско-аметьевский лес
-						<input type="radio" name="parks">
+						<input type="radio" name="parks" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -549,7 +551,7 @@
 					</label>
 
 					<label class="poll-container">Парк Урицкого
-						<input type="radio" name="parks">
+						<input type="radio" name="parks" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -557,7 +559,7 @@
 					</label>
 
 					<label class="poll-container">Парк «Крылья советов»
-						<input type="radio" name="parks">
+						<input type="radio" name="parks" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -565,7 +567,7 @@
 					</label>
 
 					<label class="poll-container">Парк Победы
-						<input type="radio" name="parks">
+						<input type="radio" name="parks" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -573,7 +575,7 @@
 					</label>
 
 					<label class="poll-container">Кремлевская набережная
-						<input type="radio" name="parks">
+						<input type="radio" name="parks" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -581,7 +583,7 @@
 					</label>
 
 					<label class="poll-container">Набережная озера «Кабан»
-						<input type="radio" name="parks">
+						<input type="radio" name="parks" class="polls">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
@@ -604,44 +606,189 @@
 					</div>
 				</div>
 				<div class="col-lg-11">
-					<label class="poll-container">Национальный музей Республики Татарстан (Гостиный двор)
-						<input type="radio" name="food">
+
+					<div class="food-wrapper">
+					<label class="poll-container">Тутырма из конины
+						<input type="radio" name="food1">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+					<label class="poll-container">Казылык
+						<input type="radio" name="food1">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+					<label class="poll-container">Фаршированные шейки гуся
+						<input type="radio" name="food1">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+					</div>
+					<div class="food-descr">Закуски</div>
+
+					<div class="food-wrapper-2">
+					<label class="poll-container">Суп-лапша домашняя (токмач)
+						<input type="radio" name="food2">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
 						</div>
 					</label>
 
-					<label class="poll-container">Музей социалистического быта
-						<input type="radio" name="food">
-						<span class="checkmark"></span>
-					</label>
-
-					<label class="poll-container">Музей «Городская Панорама»
-						<input type="radio">
-						<span class="checkmark"></span>
-					</label>
-
-					<label class="poll-container">Государственный музей изобразительных искусств Республики Татарстан
-						<input type="radio">
+					<label class="poll-container">Солянка по-татарски
+						<input type="radio" name="food2">
 						<span class="checkmark"></span>
 						<div class="progress">
 							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
 						</div>
 					</label>
 
-					<label class="poll-container">Музей Старо-Татарской слободы
-						<input type="radio">
+					<label class="poll-container">Суп Куллама (по-деревенски)
+						<input type="radio" name="food2">
 						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+					</div>
+					<div class="food-descr-2">Супы</div>
+
+					<div class="food-wrapper-3">
+					<label class="poll-container">Азу по-татарски
+						<input type="radio" name="food3">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
 					</label>
 
-					<label class="poll-container">Музей чак-чака
-						<input type="radio">
+					<label class="poll-container">Говядина по-татарски
+						<input type="radio" name="food3">
 						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
 					</label>
+
+					<label class="poll-container">Плов по-казански
+						<input type="radio" name="food3">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+					</div>
+					<div class="food-descr-3">Вторые блюда</div>
+
+					<div class="food-wrapper-4">
+					<label class="poll-container">Перемяч
+						<input type="radio" name="food4">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+
+					<label class="poll-container">Кыстыбый
+						<input type="radio" name="food4">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+
+					<label class="poll-container">Эчпочмак
+						<input type="radio" name="food4">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+
+					<label class="poll-container">Вак балиш
+						<input type="radio" name="food4">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+
+					<label class="poll-container">Бэлиш с уткой
+						<input type="radio" name="food4">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+					</div>
+					<div class="food-descr-4">Выпечка</div>
+
+					<div class="food-wrapper-5">
+					<label class="poll-container">Чак-чак
+						<input type="radio" name="food5">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+
+					<label class="poll-container">Талкеш кэлеве
+						<input type="radio" name="food5">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+
+					<label class="poll-container">Губадия
+						<input type="radio" name="food5">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+					</div>
+					<div class="food-descr-5">десерты</div>
+
+					<div class="food-wrapper-6">
+					<label class="poll-container">Чай по-татарски
+						<input type="radio" name="food6">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+
+					<label class="poll-container">Алсу
+						<input type="radio" name="food6">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+
+					<label class="poll-container">Катык
+						<input type="radio" name="food6">
+						<span class="checkmark"></span>
+						<div class="progress">
+							<progress class="progress-bar" max="100" value="80"></progress><span class="progress-count">52%</span>
+						</div>
+					</label>
+					</div>
+					<div class="food-descr-6">Напитки</div>
 				</div>
 			</div>
+			<div class="row">
+				<button type="submit" class="btn btn-send"  id="send">Голосовать</button>
+			</div>
 			<!--End food-->
+			</form>
 		</div>
 	</section>
 	<!--End polls-->
