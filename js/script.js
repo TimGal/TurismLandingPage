@@ -20,9 +20,20 @@
 
 $("document").ready(function() {
 	$('form[name="polls"]').on('submit', e => {
-		var form = $(e.target);
-
+		e.preventDefault();
 		var answers = $('input.polls:checked');
+		$.ajax({
+		  url: "sendOrderForm.php",
+		  type: "POST",
+		  data: $('#polls').serialize(),
+		  success: function(response) {
+			//обработка успешной отправки
+		  },
+		  error: function(response) {
+			//обработка ошибок при отправке
+		 }
+		});
 		console.log(answers);
-	})
+		$('.progress').css('display','flex');
+	});
 });

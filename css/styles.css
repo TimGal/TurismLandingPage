@@ -548,6 +548,7 @@ section {
 	width: 78px !important;
 	height: 58px !important;
 	font-size: 14px !important;
+	line-height: 3.5 !important;
 }
 
 .owl-next {
@@ -557,6 +558,7 @@ section {
 	width: 78px !important;
 	height: 58px !important;
 	font-size: 14px !important;
+	line-height: 3.5 !important;
 }
 
 .food-descr {
@@ -655,4 +657,32 @@ section {
     text-transform: uppercase;
     padding-left: 22px;
     font-size: 18px;
+}
+
+.req-textarea {
+	width: 82%;
+    margin-left: 92px;
+	font-family: Medium;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.btn-anket {
+	width: 282px;
+	height: 58px;
+	border-radius: 29px;
+	background-color: #fce26a;
+	color: #4cb1ad;
+	font-size: 16px;
+	font-family: DemiBold;
+	position: relative;
+	left: 50%;
+	margin-left: -141px;
+	text-transform: uppercase;
+	margin-top: 54px;
+    margin-bottom: 70px;
+}
+
+.modal-header {
+	border-bottom: 0px !important;
 }
