@@ -14,7 +14,7 @@ ymaps.ready(function () {
 			clusterIconLayout: "default#pieChart"
 		});
 
-
+    map.behaviors.disable('scrollZoom'); 
 
 	map.controls.get('zoomControl').options.set({
 		size: 'small'

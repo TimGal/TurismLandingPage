@@ -1,8 +1,10 @@
+var testimonials_carousel = null;
+
 (function ($) {
 	"use strict";
 	$(".carousel-inner .item:first-child").addClass("active");
 
-	$('.testimonials').owlCarousel({
+	testimonials_carousel = $('.testimonials').owlCarousel({
 		loop: true,
 		margin: 0,
 		responsiveClass: true,
