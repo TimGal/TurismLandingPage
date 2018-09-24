@@ -1,4 +1,5 @@
 ymaps.ready(function () {
+	var mapJSON;
 
 	var map = new ymaps.Map('map', {
 			center: [49.11, 55.80],
@@ -25,7 +26,7 @@ ymaps.ready(function () {
 
 	$.getJSON('js/data3.json')
 		.done(function (geoJson) {
-
+	mapJSON = geoJson;
 			geoJson.features.forEach(function (obj) {
 				// Задаём контент балуна.
 				obj.properties.balloonContent = obj.properties.name;
@@ -136,4 +137,19 @@ ymaps.ready(function () {
 			}
 		});
 	});
+
+	function onObjectEvent (e) {
+        var objectId = e.get('objectId');
+        if (e.get('type') == 'click') {
+            for (let object of mapJSON.features) {
+				if (object.id == objectId) {
+						console.log(e.get('objectId'));
+						console.log(object.options.backgroundImage);
+						$('div.map-photo').css('background-image', "url(" + object.options.backgroundImage + ")");
+					}
+			}
+        }
+    }
+
+	objectManager.objects.events.add(['click'], onObjectEvent);
 });

@@ -27,15 +27,48 @@ $("document").ready(function() {
 		$.ajax({
 		  url: "sendOrderForm.php",
 		  type: "POST",
-		  data: $('#polls').serialize(),
+		  data: $('form[name="polls"]').serialize(),
 		  success: function(response) {
-			//обработка успешной отправки
+			response = JSON.parse(response);
+
+			$.each (response, (name, group) => {
+			var sum = 0;
+			for (let item of group) {
+				sum += item.counter;
+			 }
+			for (let item of group) {
+				item.percentage = Math.floor(item.counter * 100 / sum);
+				let pollContainer = $('input[type="radio"][value="' + item.id + '"][name="' + name + '"]').parent();
+				$('.progress > span', pollContainer).html(item.percentage + '%');
+				$('.progress > progress', pollContainer).val(item.percentage);
+
+			}
+			console.log(group);
+			});
 		  },
 		  error: function(response) {
 			//обработка ошибок при отправке
 		 }
 		});
 		console.log(answers);
+		$('.progress').css('display','flex');
+	});
+
+	$('form[name="anketa"]').on('submit', e => {
+		e.preventDefault();
+		var answers = $('input.polls:checked');
+		$.ajax({
+		  url: "anketa.php",
+		  type: "POST",
+		  data: $('form[name="anketa"]').serialize(),
+		  success: function(response) {
+			document.body.appendChild("");
+		  },
+		  error: function(response) {
+			//обработка ошибок при отправке
+		 }
+		});
+
 		$('.progress').css('display','flex');
 	});
 });
