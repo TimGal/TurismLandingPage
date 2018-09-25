@@ -20,55 +20,83 @@ var testimonials_carousel = null;
 	$('.carousel').carousel();
 })(jQuery);
 
-$("document").ready(function() {
+$("document").ready(function () {
+
+	$.ajax({
+		url: "getPollResult.php",
+		type: "POST",
+		success: function (response) {
+			response = JSON.parse(response);
+
+			$.each(response, (name, group) => {
+				var sum = 0;
+				for (let item of group) {
+					sum += item.counter;
+				}
+				for (let item of group) {
+					item.percentage = Math.floor(item.counter * 100 / sum);
+					let pollContainer = $('input[type="radio"][value="' + item.id + '"][name="' + name + '"]').parent();
+					$('.progress > span', pollContainer).html(item.percentage + '%');
+					$('.progress > progress', pollContainer).val(item.percentage);
+
+				}
+				console.log(group);
+				$('.progress').css('display', 'flex');
+			});
+		},
+		error: function (response) {
+			//обработка ошибок при отправке
+		}
+	});
+
 	$('form[name="polls"]').on('submit', e => {
 		e.preventDefault();
 		var answers = $('input.polls:checked');
 		$.ajax({
-		  url: "sendOrderForm.php",
-		  type: "POST",
-		  data: $('form[name="polls"]').serialize(),
-		  success: function(response) {
-			response = JSON.parse(response);
+			url: "sendOrderForm.php",
+			type: "POST",
+			data: $('form[name="polls"]').serialize(),
+			success: function (response) {
+				response = JSON.parse(response);
 
-			$.each (response, (name, group) => {
-			var sum = 0;
-			for (let item of group) {
-				sum += item.counter;
-			 }
-			for (let item of group) {
-				item.percentage = Math.floor(item.counter * 100 / sum);
-				let pollContainer = $('input[type="radio"][value="' + item.id + '"][name="' + name + '"]').parent();
-				$('.progress > span', pollContainer).html(item.percentage + '%');
-				$('.progress > progress', pollContainer).val(item.percentage);
+				$.each(response, (name, group) => {
+					var sum = 0;
+					for (let item of group) {
+						sum += item.counter;
+					}
+					for (let item of group) {
+						item.percentage = Math.floor(item.counter * 100 / sum);
+						let pollContainer = $('input[type="radio"][value="' + item.id + '"][name="' + name + '"]').parent();
+						$('.progress > span', pollContainer).html(item.percentage + '%');
+						$('.progress > progress', pollContainer).val(item.percentage);
 
+					}
+					console.log(group);
+				});
+			},
+			error: function (response) {
+				//обработка ошибок при отправке
 			}
-			console.log(group);
-			});
-		  },
-		  error: function(response) {
-			//обработка ошибок при отправке
-		 }
 		});
 		console.log(answers);
-		$('.progress').css('display','flex');
+		$('.progress').css('display', 'flex');
 	});
 
 	$('form[name="anketa"]').on('submit', e => {
 		e.preventDefault();
 		var answers = $('input.polls:checked');
 		$.ajax({
-		  url: "anketa.php",
-		  type: "POST",
-		  data: $('form[name="anketa"]').serialize(),
-		  success: function(response) {
-			document.body.appendChild("");
-		  },
-		  error: function(response) {
-			//обработка ошибок при отправке
-		 }
+			url: "anketa.php",
+			type: "POST",
+			data: $('form[name="anketa"]').serialize(),
+			success: function (response) {
+				document.body.appendChild("");
+			},
+			error: function (response) {
+				//обработка ошибок при отправке
+			}
 		});
 
-		$('.progress').css('display','flex');
+		$('.progress').css('display', 'flex');
 	});
 });

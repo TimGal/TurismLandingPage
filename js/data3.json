@@ -20,7 +20,7 @@
 			"zIndex": 800000000,
 			"order": 800000000,
 			"preset": "islands#redWorshipIcon",
-			"backgroundImage": "../vendor/food1.png"
+			"backgroundImage": "../map/sights/kreml.jpg"
 		}
 	},
 	{
@@ -41,7 +41,8 @@
 		"options": {
 			"zIndex": 800000001,
 			"order": 800000001,
-			"preset": "islands#redWorshipIcon"
+			"preset": "islands#redWorshipIcon",
+			"backgroundImage": "../map/sights/sloboda.jpg"
 		}
 	},
 	{
@@ -62,7 +63,8 @@
 		"options": {
 			"zIndex": 800000002,
 			"order": 800000002,
-			"preset": "islands#redWorshipIcon"
+			"preset": "islands#redWorshipIcon",
+			"backgroundImage": "../map/sights/hram.jpg"
 		}
 	},
 	{
@@ -83,7 +85,8 @@
 		"options": {
 			"zIndex": 800000003,
 			"order": 800000003,
-			"preset": "islands#redWorshipIcon"
+			"preset": "islands#redWorshipIcon",
+			"backgroundImage": "../map/sights/kfu.jpg"
 		}
 	},
 	{
@@ -104,7 +107,8 @@
 		"options": {
 			"zIndex": 800000004,
 			"order": 800000004,
-			"preset": "islands#redWorshipIcon"
+			"preset": "islands#redWorshipIcon",
+			"backgroundImage": "../map/sights/ushkova.jpg"
 		}
 	},
 	{
@@ -125,7 +129,8 @@
 		"options": {
 			"zIndex": 800000005,
 			"order": 800000005,
-			"preset": "islands#redWorshipIcon"
+			"preset": "islands#redWorshipIcon",
+			"backgroundImage": "../map/sights/bogmonastery.jpg"
 		}
 	},
 	{
@@ -146,7 +151,8 @@
 		"options": {
 			"zIndex": 800000006,
 			"order": 800000006,
-			"preset": "islands#redWorshipIcon"
+			"preset": "islands#redWorshipIcon",
+			"backgroundImage": "../map/sights/kyrlai.jpg"
 		}
 	},
 	{
@@ -167,7 +173,8 @@
 		"options": {
 			"zIndex": 800000007,
 			"order": 800000007,
-			"preset": "islands#redWorshipIcon"
+			"preset": "islands#redWorshipIcon",
+			"backgroundImage": "../map/sights/rivera.jpg"
 		}
 	},
 	{
@@ -188,7 +195,8 @@
 		"options": {
 			"zIndex": 800000008,
 			"order": 800000008,
-			"preset": "islands#redWorshipIcon"
+			"preset": "islands#redWorshipIcon",
+			"backgroundImage": "../map/sights/wheel.jpg"
 		}
 	},
 	{
@@ -209,7 +217,8 @@
 		"options": {
 			"zIndex": 800000009,
 			"order": 800000009,
-			"preset": "islands#redWorshipIcon"
+			"preset": "islands#redWorshipIcon",
+			"backgroundImage": "../map/sights/centr.jpg"
 		}
 	},
 	{
@@ -230,7 +239,8 @@
 		"options": {
 			"zIndex": 800000010,
 			"order": 800000010,
-			"preset": "islands#redWorshipIcon"
+			"preset": "islands#redWorshipIcon",
+			"backgroundImage": "../map/sights/arena.jpg"
 		}
 	},
 	{
@@ -251,7 +261,8 @@
 		"options": {
 			"zIndex": 800000011,
 			"order": 800000011,
-			"preset": "islands#redWorshipIcon"
+			"preset": "islands#redWorshipIcon",
+			"backgroundImage": "../map/sights/(Казанский кремль).jpg"
 		}
 	},
 	{
@@ -272,7 +283,8 @@
 		"options": {
 			"zIndex": 800000012,
 			"order": 800000012,
-			"preset": "islands#redWorshipIcon"
+			"preset": "islands#redWorshipIcon",
+			"backgroundImage": "../map/sights/(Казанский кремль).jpg"
 		}
 	},
 	{
@@ -293,7 +305,8 @@
 		"options": {
 			"zIndex": 800000013,
 			"order": 800000013,
-			"preset": "islands#redWorshipIcon"
+			"preset": "islands#redWorshipIcon",
+			"backgroundImage": "../map/sights/baumana.JPG"
 		}
 	},
 	{
@@ -314,7 +327,8 @@
 		"options": {
 			"zIndex": 800000014,
 			"order": 800000014,
-			"preset": "islands#darkblueTheaterIcon"
+			"preset": "islands#darkblueTheaterIcon",
+			"backgroundImage": "../map/theatre/opera.jpg"
 		}
 	},
 	{
@@ -335,7 +349,8 @@
 		"options": {
 			"zIndex": 800000015,
 			"order": 800000015,
-			"preset": "islands#darkblueTheaterIcon"
+			"preset": "islands#darkblueTheaterIcon",
+			"backgroundImage": "../map/theatre/kachalovski.jpg"
 		}
 	},
 	{
@@ -356,7 +371,8 @@
 		"options": {
 			"zIndex": 800000016,
 			"order": 800000016,
-			"preset": "islands#darkblueTheaterIcon"
+			"preset": "islands#darkblueTheaterIcon",
+			"backgroundImage": "../map/theatre/ekiyat.jpg"
 		}
 	},
 	{
@@ -377,7 +393,8 @@
 		"options": {
 			"zIndex": 800000017,
 			"order": 800000017,
-			"preset": "islands#darkblueTheaterIcon"
+			"preset": "islands#darkblueTheaterIcon",
+			"backgroundImage": "../map/theatre/bulak.jpg"
 		}
 	},
 	{
@@ -398,7 +415,8 @@
 		"options": {
 			"zIndex": 800000018,
 			"order": 800000018,
-			"preset": "islands#darkblueTheaterIcon"
+			"preset": "islands#darkblueTheaterIcon",
+			"backgroundImage": "../map/theatre/kamal.jpg"
 		}
 	},
 	{
@@ -419,7 +437,8 @@
 		"options": {
 			"zIndex": 800000019,
 			"order": 800000019,
-			"preset": "islands#darkblueTheaterIcon"
+			"preset": "islands#darkblueTheaterIcon",
+			"backgroundImage": "../map/theatre/tinchurina.jpg"
 		}
 	},
 	{
@@ -440,7 +459,8 @@
 		"options": {
 			"zIndex": 800000020,
 			"order": 800000020,
-			"preset": "islands#darkgreenVegetationIcon"
+			"preset": "islands#darkgreenVegetationIcon",
+			"backgroundImage": "../map/parks/gorkiy.jpg"
 		}
 	},
 	{
@@ -461,7 +481,8 @@
 		"options": {
 			"zIndex": 800000021,
 			"order": 800000021,
-			"preset": "islands#darkgreenVegetationIcon"
+			"preset": "islands#darkgreenVegetationIcon",
+			"backgroundImage": "../map/parks/blacklake.JPG"
 		}
 	},
 	{
@@ -482,7 +503,8 @@
 		"options": {
 			"zIndex": 800000022,
 			"order": 800000022,
-			"preset": "islands#darkgreenVegetationIcon"
+			"preset": "islands#darkgreenVegetationIcon",
+			"backgroundImage": "../map/parks/gorki.jpg"
 		}
 	},
 	{
@@ -503,7 +525,8 @@
 		"options": {
 			"zIndex": 800000023,
 			"order": 800000023,
-			"preset": "islands#darkgreenVegetationIcon"
+			"preset": "islands#darkgreenVegetationIcon",
+			"backgroundImage": "../map/parks/urickiy.jpg"
 		}
 	},
 	{
@@ -524,7 +547,8 @@
 		"options": {
 			"zIndex": 800000024,
 			"order": 800000024,
-			"preset": "islands#darkgreenVegetationIcon"
+			"preset": "islands#darkgreenVegetationIcon",
+			"backgroundImage": "../map/parks/wings.jpg"
 		}
 	},
 	{
@@ -545,7 +569,8 @@
 		"options": {
 			"zIndex": 800000025,
 			"order": 800000025,
-			"preset": "islands#darkgreenVegetationIcon"
+			"preset": "islands#darkgreenVegetationIcon",
+			"backgroundImage": "../map/parks/pobeda.jpg"
 		}
 	},
 	{
@@ -566,7 +591,8 @@
 		"options": {
 			"zIndex": 800000026,
 			"order": 800000026,
-			"preset": "islands#yellowWaterParkIcon"
+			"preset": "islands#yellowWaterParkIcon",
+			"backgroundImage": "../map/parks/kremlnaber.jpg"
 		}
 	},
 	{
@@ -587,7 +613,8 @@
 		"options": {
 			"zIndex": 800000027,
 			"order": 800000027,
-			"preset": "islands#yellowWaterParkIcon"
+			"preset": "islands#yellowWaterParkIcon",
+			"backgroundImage": "../map/parks/kabannaber.JPG"
 		}
 	},
 	{
@@ -608,7 +635,8 @@
 		"options": {
 			"zIndex": 800000028,
 			"order": 800000028,
-			"preset": "islands#nightLeisureIcon"
+			"preset": "islands#nightLeisureIcon",
+			"backgroundImage": "../map/museums/natmuseum.JPG"
 		}
 	},
 	{
@@ -629,7 +657,8 @@
 		"options": {
 			"zIndex": 800000029,
 			"order": 800000029,
-			"preset": "islands#nightLeisureIcon"
+			"preset": "islands#nightLeisureIcon",
+			"backgroundImage": "../map/museums/socbyt.jpg"
 		}
 	},
 	{
@@ -650,7 +679,8 @@
 		"options": {
 			"zIndex": 800000030,
 			"order": 800000030,
-			"preset": "islands#nightLeisureIcon"
+			"preset": "islands#nightLeisureIcon",
+			"backgroundImage": "../map/museums/panorama.jpg"
 		}
 	},
 	{
@@ -671,7 +701,8 @@
 		"options": {
 			"zIndex": 800000031,
 			"order": 800000031,
-			"preset": "islands#nightLeisureIcon"
+			"preset": "islands#nightLeisureIcon",
+			"backgroundImage": "../map/museums/bistese.jpg"
 		}
 	},
 	{
@@ -692,7 +723,8 @@
 		"options": {
 			"zIndex": 800000032,
 			"order": 800000032,
-			"preset": "islands#nightLeisureIcon"
+			"preset": "islands#nightLeisureIcon",
+			"backgroundImage": "../map/museums/chakchak.JPG"
 		}
 	}]
 }

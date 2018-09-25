@@ -46,7 +46,7 @@ ymaps.ready(function () {
 					content: title
 				},
 				state: {
-					selected: true
+					selected: false
 				}
 			});
 		}),
@@ -59,7 +59,7 @@ ymaps.ready(function () {
 			items: listBoxItems,
 			state: {
 				// Признак, развернут ли список.
-				expanded: true,
+				expanded: false,
 				filters: listBoxItems.reduce(function (filters, filter) {
 					filters[filter.data.get('content')] = filter.isSelected();
 					return filters;
@@ -98,15 +98,25 @@ ymaps.ready(function () {
 
 	var items = listBoxControl.getAll();
 
-	$(document).ready(function () {
+	items[0].deselect();
+	items[1].deselect();
+	items[2].deselect();
+	items[3].deselect();
 
+	$(document).ready(function () {
 		$("#museum").click(function () {
 			if (items[0].isSelected()) {
 				items[0].deselect();
 				$("#museum").removeClass("active");
 			} else {
 				items[0].select();
+				items[1].deselect();
+				items[2].deselect();
+				items[3].deselect();
 				$("#museum").addClass("active");
+				$("#historic").removeClass("active");
+				$("#theatre").removeClass("active");
+				$("#parks").removeClass("active");
 			}
 		});
 		$("#historic").click(function () {
@@ -114,8 +124,14 @@ ymaps.ready(function () {
 				items[1].deselect();
 				$("#historic").removeClass("active");
 			} else {
+				items[0].deselect();
 				items[1].select();
+				items[2].deselect();
+				items[3].deselect();
+				$("#museum").removeClass("active");
 				$("#historic").addClass("active");
+				$("#theatre").removeClass("active");
+				$("#parks").removeClass("active");
 			}
 		});
 		$("#theatre").click(function () {
@@ -123,8 +139,14 @@ ymaps.ready(function () {
 				items[2].deselect();
 				$("#theatre").removeClass("active");
 			} else {
+				items[0].deselect();
+				items[1].deselect();
 				items[2].select();
+				items[3].deselect();
+				$("#museum").removeClass("active");
+				$("#historic").removeClass("active");
 				$("#theatre").addClass("active");
+				$("#parks").removeClass("active");
 			}
 		});
 		$("#parks").click(function () {
@@ -132,7 +154,13 @@ ymaps.ready(function () {
 				items[3].deselect();
 				$("#parks").removeClass("active");
 			} else {
+				items[0].deselect();
+				items[1].deselect();
+				items[2].deselect();
 				items[3].select();
+				$("#museum").removeClass("active");
+				$("#historic").removeClass("active");
+				$("#theatre").removeClass("active");
 				$("#parks").addClass("active");
 			}
 		});
@@ -143,6 +171,7 @@ ymaps.ready(function () {
         if (e.get('type') == 'click') {
             for (let object of mapJSON.features) {
 				if (object.id == objectId) {
+						console.log(object);
 						console.log(e.get('objectId'));
 						console.log(object.options.backgroundImage);
 						$('div.map-photo').css('background-image', "url(" + object.options.backgroundImage + ")");

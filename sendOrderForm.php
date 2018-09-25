@@ -1,5 +1,6 @@
 <?php
-		$file = file_get_contents('D:\OSPanel\domains\tourism\polls.json');     // Открыть файл polls.json
+		$file = file_get_contents('polls.json');     // Открыть файл polls.json
+//		echo $file;
 		$pollList = json_decode($file);              // Декодировать в массив
 		if (count($_POST) > 0) {
 			foreach ( $pollList->museums  as $museum){   // Найти в массиве
@@ -54,8 +55,7 @@
 		};
 		}
 
-
 		$output = json_encode($pollList);
-		file_put_contents('D:\OSPanel\domains\tourism\polls.json', $output); // Перекодировать в формат и записать в файл.
+		file_put_contents('polls.json', $output); // Перекодировать в формат и записать в файл.
 		echo $output;
 ?>

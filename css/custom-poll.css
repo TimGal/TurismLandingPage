@@ -14,7 +14,7 @@
 	-ms-user-select: none;
 	user-select: none;
     height: 24px;
-    line-height: 24px;
+    line-height: 24.5px;
 }
 
 .poll-container:last-child {
@@ -98,6 +98,8 @@ progress[value]::-webkit-progress-bar {
 	position: relative;
 	float: right;
 	margin-bottom: 90px;
+	right: 50%;
+    margin-right: -141px;
 }
 
 #poll form > .row:not(:last-child) {

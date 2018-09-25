@@ -144,6 +144,7 @@
 	width: 196px;
 	min-height: 188px;
 	left: 59%;
+	z-index: 100;
 }
 
 #dialog > a {
@@ -410,6 +411,7 @@
     .partner-img {
 	    position: relative;
 	    top: 50%;
+		filter: grayscale(100%);
     }
     #partner1 {
 	    margin-top: -38px;
@@ -842,4 +844,31 @@
     .btn-send {
         width: 100% !important;
     }
+}
+
+.rights-files {
+	text-align: center;
+	font-family: DemiBold;
+	font-size: 18px;
+	text-decoration: none;
+	color: black;
+	line-height: 60px;
+	color: #16a9b6;
+}
+
+@keyframes colorful {
+	0%   {filter: grayscale(0%);}
+    25%  {filter: grayscale(25%);}
+    50%  {filter: grayscale(50%);}
+	75%  {filter: grayscale(75%);}
+    100% {filter: grayscale(100%);}
+}
+
+.partner-img:hover {
+	animation-name: colorful;
+    animation-duration: 3s;
+	transition-timing-function: ease-in-out;
+}
+.rights {
+	min-height: 60px;
 }
